@@ -1,18 +1,63 @@
-# React + Vite
+# Zepto — Grocery Shopping UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based grocery shopping interface built as a frontend project. The current implementation includes a reusable header, home sections, product browsing UI, cart state, add/remove cart actions, taskbar navigation, and footer components.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Product-focused grocery shopping interface
+- Add products to the cart
+- Increase/decrease product quantities
+- Live cart item count
+- Reusable React components for header, home sections, taskbar, and footer
+- Responsive frontend styling
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+- ESLint
 
-Note: This will impact Vite dev & build performances.
+## Project Structure
 
-## Expanding the ESLint configuration
+```text
+src/
+├── Component/
+│   ├── Header.jsx
+│   ├── Home.jsx
+│   ├── Home2.jsx
+│   ├── Taskbar.jsx
+│   └── Footer.jsx
+├── assets/
+│   └── hero.png
+├── App.jsx
+├── index.css
+└── main.jsx
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local Vite URL shown in the terminal.
+
+## Production build
+
+```bash
+npm run lint
+npm run build
+```
+
+## Project status
+
+This is a frontend portfolio project. It currently focuses on the shopping interface and client-side cart interactions; no production payment, authentication, or backend commerce service is claimed here.
+
+## Author
+
+**Akhil Chaturvedi** — B.Tech CSE student and student developer.
+
+See the main GitHub profile for other projects, including DrishtiAI.
